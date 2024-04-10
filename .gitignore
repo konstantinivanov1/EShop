@@ -1,1 +1,61 @@
-node_modules
+# compiled output
+/dist
+/tmp
+/out-tsc
+
+# dependencies
+/node_modules
+
+# project-specific
+/.idea
+/*.iml
+/.vscode
+/.DS_Store
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+/yarn-error.log
+/TSOutput
+
+# IDEs and editors
+/.idea
+/.vscode
+*.sublime-project
+*.sublime-workspace
+*.komodoproject
+.komodotools
+.sync-settings.json
+
+# Angular related
+.angular-config.json
+.angular-cli.json
+.angular.json
+
+# Tests
+/*.xml
+*.log
+
+# Typescript related
+*.js
+*.js.map
+
+# Angular Service Worker
+/ngsw-config.json
+
+# NestJS related
+/dist
+/*.log
+
+# package-lock.json
+package-lock.json
+
+# dotenv environment variables file
+.env
+
+# Optional - deployable files
+# /firebase.json
+# /firebase-debug.log
+# /functions
