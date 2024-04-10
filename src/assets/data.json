@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "name": "Apple AirPods Pro",
+    "description": "Active noise cancellation for immersive sound. Transparency mode for hearing what’s happening around you.",
+    "price": 249.00,
+    "sale_price": null,
+    "image": "https://via.placeholder.com/300",
+    "rating": 4.7,
+    "category": "Electronics"
+  },
+  {
+    "id": 2,
+    "name": "Levi's Men's 505 Regular Fit Jeans",
+    "description": "A classic cut and straight leg with just enough room for a comfortable fit.",
+    "price": 39.99,
+    "sale_price": null,
+    "image": "https://via.placeholder.com/300",
+    "rating": 4.5,
+    "category": "Clothing"
+  },
+  {
+    "id": 3,
+    "name": "Instant Pot Duo 7-in-1 Electric Pressure Cooker",
+    "description": "Cooks up to 70% faster. Combines 7 kitchen appliances in 1.",
+    "price": 79.00,
+    "sale_price": null,
+    "image": "https://via.placeholder.com/300",
+    "rating": 4.8,
+    "category": "Home & Kitchen"
+  },
+  {
+    "id": 4,
+    "name": "Samsung Galaxy S20 Ultra 5G",
+    "description": "An epic 6.9-inch Infinity-O display, 108 MP wide camera, and a 5000mAh battery.",
+    "price": 1199.99,
+    "sale_price": 1099.99,
+    "image": "https://via.placeholder.com/300",
+    "rating": 4.6,
+    "category": "Electronics"
+  },
+  {
+    "id": 5,
+    "name": "Nike Men's Revolution 5 Running Shoes",
+    "description": "Lightweight knit material wraps your foot in breathable support, while a minimalist design fits in just about anywhere your day takes you.",
+    "price": 64.99,
+    "sale_price": 49.99,
+    "image": "https://via.placeholder.com/300",
+    "rating": 4.3,
+    "category": "Clothing"
+  }
+]
