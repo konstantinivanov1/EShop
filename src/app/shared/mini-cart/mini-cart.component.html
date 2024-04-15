@@ -1,1 +1,10 @@
-<p>mini-cart works!</p>
+<h2>Cart</h2>
+<p *ngIf="count > 0">{{count}}</p>
+
+<div>
+    <app-product-card *ngFor="let cartItem of cartItems.items"
+                        [product]="cartItem">
+
+    </app-product-card>
+</div>
+<h1>end of shopping cart</h1>

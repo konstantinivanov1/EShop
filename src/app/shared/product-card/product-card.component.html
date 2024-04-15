@@ -1,6 +1,4 @@
-<div *ngFor="let product of products">
-    <h3>{{product.name}}</h3>
-    <p>{{product.description}}</p>
-    <p><i><b>{{product.price.toFixed(2)}}</b></i></p>
-    <p>{{product.category}}</p>
-</div>
+<img [src]="product.image" alt="Product Image">
+<h3>{{product.name}}</h3>
+<p>{{product.price}}</p>
+<div (click)="addToCard(product)">Add to card</div>

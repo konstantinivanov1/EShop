@@ -17,6 +17,10 @@ import { ProductEffects } from "./effects/products.effects";
 import { CommonModule } from "@angular/common";
 import { ProductCardComponent } from "./shared/product-card/product-card.component";
 import { cartReducer, CartState } from "./reducers/cart.reducer";
+import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
+import { RouterModule } from "@angular/router";
+import { HomeComponent } from "./components/home/home.component";
+import { routes } from "./app.routes";
 
 export interface AppState {
     products: ProductState
@@ -39,12 +43,15 @@ const reducer: ActionReducerMap<AppState> = {
         ProductListComponent,
         CategoryListComponent,
         ProductDetailsComponent,
-        ProductCardComponent
+        ProductCardComponent,
+        HomeComponent
     ],
     imports:[
         HttpClientModule,
         CommonModule,
         BrowserModule,
+        FontAwesomeModule,
+        RouterModule.forRoot(routes),
         StoreModule.forRoot(reducer),
         EffectsModule.forRoot(ProductEffects),
     ],
