@@ -11,42 +11,242 @@
   },
   {
     "id": 2,
-    "name": "Levi's Men's 505 Regular Fit Jeans",
-    "description": "A classic cut and straight leg with just enough room for a comfortable fit.",
-    "price": 39.99,
+    "name": "Samsung Galaxy Watch Active 2",
+    "description": "Advanced fitness tracking with built-in GPS and heart rate monitor. Water-resistant design.",
+    "price": 249.99,
     "sale_price": null,
-    "image": "https://via.placeholder.com/300",
-    "rating": 4.5,
-    "category": "Clothing"
-  },
-  {
-    "id": 3,
-    "name": "Instant Pot Duo 7-in-1 Electric Pressure Cooker",
-    "description": "Cooks up to 70% faster. Combines 7 kitchen appliances in 1.",
-    "price": 79.00,
-    "sale_price": null,
-    "image": "https://via.placeholder.com/300",
-    "rating": 4.8,
-    "category": "Home & Kitchen"
-  },
-  {
-    "id": 4,
-    "name": "Samsung Galaxy S20 Ultra 5G",
-    "description": "An epic 6.9-inch Infinity-O display, 108 MP wide camera, and a 5000mAh battery.",
-    "price": 1199.99,
-    "sale_price": 1099.99,
     "image": "https://via.placeholder.com/300",
     "rating": 4.6,
     "category": "Electronics"
   },
   {
+    "id": 3,
+    "name": "Sony WH-1000XM4 Wireless Headphones",
+    "description": "Industry-leading noise cancellation. Dual noise sensor technology.",
+    "price": 349.99,
+    "sale_price": null,
+    "image": "https://via.placeholder.com/300",
+    "rating": 4.8,
+    "category": "Electronics"
+  },
+  {
+    "id": 4,
+    "name": "DJI Mavic Air 2 Drone",
+    "description": "Foldable and portable drone with 4K camera. Intelligent shooting modes for stunning aerial footage.",
+    "price": 799.00,
+    "sale_price": null,
+    "image": "https://via.placeholder.com/300",
+    "rating": 4.9,
+    "category": "Electronics"
+  },
+  {
     "id": 5,
-    "name": "Nike Men's Revolution 5 Running Shoes",
-    "description": "Lightweight knit material wraps your foot in breathable support, while a minimalist design fits in just about anywhere your day takes you.",
-    "price": 64.99,
+    "name": "Logitech MX Master 3 Wireless Mouse",
+    "description": "Advanced ergonomic design for comfort. Customizable buttons and hyper-fast scroll wheel.",
+    "price": 99.99,
+    "sale_price": null,
+    "image": "https://via.placeholder.com/300",
+    "rating": 4.7,
+    "category": "Electronics"
+  },
+  {
+    "id": 6,
+    "name": "Apple iPad Pro (12.9-inch, Wi-Fi, 128GB)",
+    "description": "Liquid Retina display with ProMotion technology. A12Z Bionic chip for powerful performance.",
+    "price": 999.00,
+    "sale_price": null,
+    "image": "https://via.placeholder.com/300",
+    "rating": 4.8,
+    "category": "Electronics"
+  },
+  {
+    "id": 7,
+    "name": "Bose QuietComfort 35 II Wireless Headphones",
+    "description": "World-class noise cancellation. Alexa voice control built-in.",
+    "price": 299.00,
+    "sale_price": null,
+    "image": "https://via.placeholder.com/300",
+    "rating": 4.6,
+    "category": "Electronics"
+  },
+  {
+    "id": 8,
+    "name": "Samsung Galaxy Tab S7+",
+    "description": "Stunning 12.4-inch Super AMOLED display. Powerful performance with Snapdragon 865+ processor.",
+    "price": 849.99,
+    "sale_price": null,
+    "image": "https://via.placeholder.com/300",
+    "rating": 4.8,
+    "category": "Electronics"
+  },
+  {
+    "id": 9,
+    "name": "GoPro HERO9 Black",
+    "description": "5K video recording and 20MP photos. HyperSmooth 3.0 video stabilization.",
+    "price": 449.99,
+    "sale_price": null,
+    "image": "https://via.placeholder.com/300",
+    "rating": 4.7,
+    "category": "Electronics"
+  },
+  {
+    "id": 10,
+    "name": "Amazon Echo Show 10 (3rd Gen)",
+    "description": "10.1-inch HD screen with adaptive brightness. Rotating design for optimal viewing.",
+    "price": 249.99,
+    "sale_price": null,
+    "image": "https://via.placeholder.com/300",
+    "rating": 4.5,
+    "category": "Electronics"
+  },
+  {
+    "id": 11,
+    "name": "Fitbit Charge 4 Fitness and Activity Tracker",
+    "description": "Built-in GPS for accurate tracking. Active Zone Minutes feature for personalized guidance.",
+    "price": 149.95,
+    "sale_price": null,
+    "image": "https://via.placeholder.com/300",
+    "rating": 4.6,
+    "category": "Electronics"
+  },
+  {
+    "id": 12,
+    "name": "Apple Watch Series 6 (GPS, 44mm)",
+    "description": "Blood oxygen sensor and ECG app. Always-On Retina display.",
+    "price": 429.00,
+    "sale_price": null,
+    "image": "https://via.placeholder.com/300",
+    "rating": 4.9,
+    "category": "Electronics"
+  },
+  {
+    "id": 13,
+    "name": "Sony PlayStation 5 Console",
+    "description": "Next-gen console with lightning-fast SSD. Stunning 4K gaming and 3D audio technology.",
+    "price": 499.99,
+    "sale_price": null,
+    "image": "https://via.placeholder.com/300",
+    "rating": 4.9,
+    "category": "Electronics"
+  },
+  {
+    "id": 14,
+    "name": "Microsoft Surface Pro 7",
+    "description": "Versatile 2-in-1 laptop and tablet. Intel Core processor for powerful performance.",
+    "price": 899.99,
+    "sale_price": null,
+    "image": "https://via.placeholder.com/300",
+    "rating": 4.7,
+    "category": "Electronics"
+  },
+  {
+    "id": 15,
+    "name": "Canon EOS Rebel T8i DSLR Camera",
+    "description": "24.1 Megapixel CMOS sensor. Dual Pixel CMOS AF for fast and accurate autofocus.",
+    "price": 899.00,
+    "sale_price": null,
+    "image": "https://via.placeholder.com/300",
+    "rating": 4.8,
+    "category": "Electronics"
+  },
+  {
+    "id": 16,
+    "name": "Nintendo Switch Console",
+    "description": "Versatile gaming console for at-home and on-the-go gaming. Joy-Con controllers for multiplayer fun.",
+    "price": 299.99,
+    "sale_price": null,
+    "image": "https://via.placeholder.com/300",
+    "rating": 4.8,
+    "category": "Electronics"
+  },
+  {
+    "id": 17,
+    "name": "LG OLED65CXPUA 65-inch 4K Smart OLED TV",
+    "description": "Cinematic OLED display with stunning colors and deep blacks. AI-powered processor for enhanced picture quality.",
+    "price": 1999.99,
+    "sale_price": null,
+    "image": "https://via.placeholder.com/300",
+    "rating": 4.9,
+    "category": "Electronics"
+  },
+  {
+    "id": 18,
+    "name": "Razer BlackWidow Elite Mechanical Gaming Keyboard",
+    "description": "Razer Mechanical Switches for responsive gaming. Multi-function digital dial and dedicated media controls.",
+    "price": 129.99,
+    "sale_price": null,
+    "image": "https://via.placeholder.com/300",
+    "rating": 4.6,
+    "category": "Electronics"
+  },
+  {
+    "id": 19,
+    "name": "Garmin Forerunner 945 GPS Running Watch",
+    "description": "Advanced running dynamics and performance monitoring tools. Music storage and streaming capability.",
+    "price": 599.99,
+    "sale_price": null,
+    "image": "https://via.placeholder.com/300",
+    "rating": 4.8,
+    "category": "Electronics"
+  },
+  {
+    "id": 20,
+    "name": "Xbox Series X Console",
+    "description": "Fastest, most powerful Xbox ever. 4K gaming at up to 120 frames per second.",
+    "price": 499.99,
+    "sale_price": null,
+    "image": "https://via.placeholder.com/300",
+    "rating": 4.9,
+    "category": "Electronics"
+  },
+  {
+    "id": 21,
+    "name": "Bose SoundLink Color Bluetooth Speaker II",
+    "description": "Bold sound in a small, water-resistant speaker. Up to 8 hours of playtime per charge.",
+    "price": 129.00,
+    "sale_price": 99.00,
+    "image": "https://via.placeholder.com/300",
+    "rating": 4.6,
+    "category": "Electronics"
+  },
+  {
+    "id": 22,
+    "name": "Google Nest Hub Max",
+    "description": "Smart display with Google Assistant. 10-inch HD touchscreen for easy control of smart home devices.",
+    "price": 229.00,
+    "sale_price": 199.00,
+    "image": "https://via.placeholder.com/300",
+    "rating": 4.7,
+    "category": "Electronics"
+  },
+  {
+    "id": 23,
+    "name": "Microsoft Xbox Wireless Controller",
+    "description": "Compatible with Xbox Series X|S, Xbox One, Windows 10, and Android devices. Textured grip for enhanced comfort.",
+    "price": 59.99,
     "sale_price": 49.99,
     "image": "https://via.placeholder.com/300",
-    "rating": 4.3,
-    "category": "Clothing"
-  }
+    "rating": 4.8,
+    "category": "Electronics"
+  },
+  {
+    "id": 24,
+    "name": "Ring Video Doorbell 3 Plus",
+    "description": "1080p HD video doorbell with enhanced motion detection. Pre-roll video previews for better security.",
+    "price": 229.00,
+    "sale_price": 199.00,
+    "image": "https://via.placeholder.com/300",
+    "rating": 4.7,
+    "category": "Electronics"
+  },
+  {
+    "id": 25,
+    "name": "Fitbit Versa 3 Health & Fitness Smartwatch",
+    "description": "Built-in GPS for accurate tracking. Active Zone Minutes feature for personalized guidance.",
+    "price": 229.95,
+    "sale_price": 199.95,
+    "image": "https://via.placeholder.com/300",
+    "rating": 4.7,
+    "category": "Electronics"
+  }  
 ]
