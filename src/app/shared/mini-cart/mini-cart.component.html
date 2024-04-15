@@ -1,10 +1,13 @@
-<h2>Cart</h2>
-<p *ngIf="count > 0">{{count}}</p>
-
-<div>
-    <app-product-card *ngFor="let cartItem of cartItems.items"
-                        [product]="cartItem">
-
-    </app-product-card>
+<div class="cart-component-holder">
+    <div class="cart-icon-holder">
+        <img class="cart-icon" [src]="cartImage" alt="Cart Icon">
+        <p *ngIf="count > 0" class="cart-count">{{count}}</p>
+    </div>
+    
+    <!-- <div class="cart-dropdown-holder">
+        <app-product-card *ngFor="let cartItem of cartItems.items"
+                            [product]="cartItem">
+    
+        </app-product-card>
+    </div> -->
 </div>
-<h1>end of shopping cart</h1>

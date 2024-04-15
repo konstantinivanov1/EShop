@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { selectCartState } from '../../selectors/cart.selectors';
 import { AppState } from '../../app.module';
 import { Store } from '@ngrx/store';
@@ -9,6 +9,7 @@ import { Store } from '@ngrx/store';
   styleUrl: './mini-cart.component.scss'
 })
 export class MiniCartComponent {
+  @Input() cartImage = '';
   cartItems$ = this.store.select(selectCartState);
   cartItems: any;
   count: number = 0;

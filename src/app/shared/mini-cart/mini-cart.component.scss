@@ -1,0 +1,25 @@
+.cart-component-holder{
+
+    .cart-icon-holder{
+        position: relative;
+
+        .cart-icon{
+            height: 40px;
+        }
+
+        .cart-count{
+            position: absolute;
+            bottom: 0;
+            right: -5px;
+            background-color: #ffffff;
+            font-weight: bold;
+            border-radius: 50%;
+            border: 1px solid #ff7846;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
