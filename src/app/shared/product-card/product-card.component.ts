@@ -8,6 +8,7 @@ import { loadProducts } from '../../actions/products.actions';
 import { addToCard } from '../../actions/cart.actions';
 import { selectCartState } from '../../selectors/cart.selectors';
 import { AppState } from '../../app.module';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-product-card',
@@ -19,10 +20,12 @@ export class ProductCardComponent {
   cart: any;
 
   constructor(
-    private store: Store<AppState>
+    private store: Store<AppState>,
+    private router: Router
   ){}
   
   addToCard(product: any){
+    // event?.stopPropagation();
     this.store.dispatch(addToCard({product}));
     this.store.select(selectCartState).subscribe(cart => {
       this.cart = cart
@@ -30,4 +33,7 @@ export class ProductCardComponent {
     });
   }
   
+  setCurrentProduct(){
+    this.router.navigate(['/product', this.product.id])
+  }
 }

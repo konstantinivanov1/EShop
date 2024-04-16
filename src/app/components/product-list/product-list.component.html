@@ -1,3 +1,14 @@
-<app-product-card *ngFor="let product of products"
-                [product] = product></app-product-card>
-<h1>Here is the product list</h1>
+<div class="product-list">
+    <ul>
+        <li (click)="setCategory('')" [class.active] = "!currentCategory">All</li>
+        <li *ngFor="let category of categories" (click)="setCategory(category)" [class.active] = "currentCategory === category">{{category}}</li>
+    </ul>
+    <div *ngIf="currentCategory" class="products">
+        <app-product-card *ngFor="let product of filteredProducts"
+        [product] = product></app-product-card>
+    </div>
+    <div *ngIf="!currentCategory" class="products">
+        <app-product-card *ngFor="let product of products"
+        [product] = product></app-product-card>
+    </div>
+</div>

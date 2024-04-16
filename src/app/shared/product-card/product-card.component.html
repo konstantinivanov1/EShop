@@ -1,6 +1,7 @@
-<div class="product-card">
+<div class="product-card" (click)="setCurrentProduct()">
     <img [src]="product.image" alt="Product Image">
     <h3>{{product.name}}</h3>
     <p>${{product.price.toFixed(2)}}</p>
+    <div>{{product.category}}</div>
     <div (click)="addToCard(product)">Add to card</div>
 </div>

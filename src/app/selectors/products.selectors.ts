@@ -9,3 +9,13 @@ export const selectProducts = createSelector(
     selectProductState,
     (state) => state.products
 )
+
+export const selectCurrentProduct = createSelector(
+    selectProductState,
+    (state) => state.selectedProduct
+)
+
+export const selectRelatedProducts = createSelector(
+    selectProductState,
+    (state) => state.relatedProducts
+)

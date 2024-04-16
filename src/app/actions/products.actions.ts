@@ -15,3 +15,14 @@ export const loadProductsFail = createAction(
     '[Products] Load Products Fail',
     props<{error: string}>()
 );
+
+export const getProductById = createAction(
+    '[Product] Get Product By Id',
+    props<{productId: number | null}>()
+)
+
+
+export const getProductByCategory = createAction(
+    '[Product] Get Product By Category',
+    props<{category: string | undefined}>()
+)

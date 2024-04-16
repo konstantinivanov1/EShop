@@ -14,6 +14,9 @@ import { loadProducts } from '../../actions/products.actions';
 export class ProductListComponent {
   products$: Observable<Product[]> | undefined;
   products: Product[] = [];
+  categories: Set<string> = new Set();
+  currentCategory: string = '';
+  filteredProducts: Product[] = [];
 
   constructor(private store: Store<any>, private productService: ProductService) {}
 
@@ -25,8 +28,18 @@ export class ProductListComponent {
     });
 
     this.products$.subscribe(products => {
-      this.products = products
-    });
-    
+      this.products = products;
+      this.categories.clear();
+      products.forEach(product => {
+        this.categories.add(product.category);
+      });
+    }); 
   }
+
+  setCategory(category: string) {
+    this.currentCategory = category;
+    this.filteredProducts = this.products.filter(product => product.category === this.currentCategory);
+    console.log(this.currentCategory);
+    
+  } 
 }

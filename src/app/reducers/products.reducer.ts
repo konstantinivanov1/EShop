@@ -1,5 +1,6 @@
 import { createReducer, on } from "@ngrx/store"
-import { loadProducts, loadProductsFail, loadProductsSuccess } from "../actions/products.actions"
+import { getProductByCategory, getProductById, loadProducts, loadProductsFail, loadProductsSuccess } from "../actions/products.actions"
+import { findIndex } from "rxjs"
 
 export interface Product{
     "id": number,
@@ -13,17 +14,22 @@ export interface Product{
 };
 
 export interface ProductState{
-    products: Product[]
+    products: Product[],
+    selectedProduct: Product | null,
+    relatedProducts: Product[]
 };
 
 export const initialState: ProductState = {
-    products: []
+    products: [],
+    selectedProduct: null,
+    relatedProducts: []
 }
 
 export const productsReducer = createReducer(
     initialState,
-    on(loadProducts , () => {
+    on(loadProducts , (state) => {
         return{
+            ...state,
             products: [],
         }
     }),
@@ -31,6 +37,25 @@ export const productsReducer = createReducer(
         return{
             ...state,
             products
+        }
+    }),
+    on(getProductById, (state, {productId}) => {
+        const productIndex = state.products.findIndex(product => product.id === productId);
+        if(productIndex === -1){
+            return{
+                ...state
+            }   
+        }
+        return{
+            ...state,
+            selectedProduct: state.products[productIndex]
+        }
+    }),
+    on(getProductByCategory, (state, {category}) => {
+        const relatedProducts = state.products.filter(product => product.category === category)
+        return {
+            ...state,
+            relatedProducts
         }
     })
 )
