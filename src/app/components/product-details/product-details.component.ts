@@ -6,6 +6,7 @@ import { selectCurrentProduct, selectRelatedProducts } from '../../selectors/pro
 import { ActivatedRoute } from '@angular/router';
 import { getProductByCategory, getProductById } from '../../actions/products.actions';
 import { Observable } from 'rxjs';
+import { addToCard } from '../../actions/cart.actions';
 
 @Component({
   selector: 'app-product-details',
@@ -14,7 +15,7 @@ import { Observable } from 'rxjs';
 })
 export class ProductDetailsComponent {
   product$: any;
-  product: Product | null = null;
+  product: any;
   productId: number | null = null;
   category: string | undefined = '';
   relatedProducts$: any;
@@ -46,5 +47,14 @@ export class ProductDetailsComponent {
       console.log(this.relatedProducts);
       
     })
+    window.scrollTo(0, 0)
+  }
+
+  refresh() {
+    this.ngOnInit();
+  }
+
+  addToCard(){
+    this.store.dispatch(addToCard(this.product));
   }
 }

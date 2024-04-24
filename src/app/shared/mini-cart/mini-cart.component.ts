@@ -13,6 +13,7 @@ export class MiniCartComponent {
   cartItems$ = this.store.select(selectCartState);
   cartItems: any;
   count: number = 0;
+  expandCart: boolean = false;
 
   constructor(
     private store: Store<AppState>
@@ -24,5 +25,9 @@ export class MiniCartComponent {
       console.log(this.cartItems);
       this.count = this.cartItems.items.length
     });
+  }
+
+  toggleExpandCart(){
+    this.expandCart = !this.expandCart
   }
 }

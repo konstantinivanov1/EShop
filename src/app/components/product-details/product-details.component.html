@@ -1,16 +1,21 @@
-<p>product-details works!</p>
-<div class="single-product">
-    <img [src]="product?.image" alt="Product Image">
-    <h3>{{product?.name}}</h3>
-    <p>${{product?.price?.toFixed(2)}}</p>
-    <div>{{product?.category}}</div>
-    <div>{{product?.description}}</div>
-    <div>Add to card</div>
+<div class="single-product" *ngIf="product">
+    <div class="single-product-info">
+        <img [src]="product?.image" alt="Product Image">
+        <h3>{{product?.name}}</h3>
+        <p>${{product?.price?.toFixed(2)}}</p>
+        <div>{{product?.category}}</div>
+        <div>{{product?.description}}</div>
+        <div (click)="addToCard()">Add to card</div>
+    </div>
+    
+    <div>
+        <h3>Related products</h3>
+        <app-product-list (click)="refresh()"></app-product-list>
+    </div>
 </div>
-
-<div>
-    <h1>Related</h1>
-    <app-product-list></app-product-list>
+<div class="no-single-product" *ngIf="!product">
+    <h1>No product is found :(</h1>
+    <h3 routerLink="/">Home</h3>
 </div>
 
 <router-outlet></router-outlet>

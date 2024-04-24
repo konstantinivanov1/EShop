@@ -15,7 +15,8 @@
             border-radius: 8px;
 
             &.active{
-                background-color: #cccccc;
+                font-weight: bold;
+                border-color: #ff7846;
             }
         }
     }

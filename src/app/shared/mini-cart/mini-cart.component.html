@@ -1,13 +1,19 @@
-<div class="cart-component-holder">
-    <div class="cart-icon-holder">
+<div class="mini-cart-holder relative">
+    <div class="cart-icon-holder" (click)="toggleExpandCart()" [class.expanded]="expandCart">
         <img class="cart-icon" [src]="cartImage" alt="Cart Icon">
         <p *ngIf="count > 0" class="cart-count">{{count}}</p>
     </div>
     
-    <!-- <div class="cart-dropdown-holder">
+    <div class="cart-dropdown-holder absolute" *ngIf="expandCart && count > 0">
         <app-product-card *ngFor="let cartItem of cartItems.items"
                             [product]="cartItem">
     
         </app-product-card>
-    </div> -->
+
+        <a routerLink="/cart" class="go-to-cart">Go to Cart</a>
+    </div>
+
+    <div class="cart-dropdown-holder absolute empty" *ngIf="expandCart && count < 1">
+        <p class="empty-message">Cart is empty</p>
+    </div>
 </div>

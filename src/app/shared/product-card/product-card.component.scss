@@ -1,0 +1,33 @@
+.product-card{
+    border: 1px solid #ff7846;
+    padding: 12px;
+    margin: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 16px;
+
+    .desc{
+        margin: 24px 0;
+        text-align: center;
+    }
+
+    .price-info{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        .price{
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .add-to-cart{
+            padding: 12px 24px;
+            background-color: #ff7846;
+            color: #ffffff;
+            border-radius: 16px;
+        }
+    }
+}

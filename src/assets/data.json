@@ -5,7 +5,7 @@
     "description": "A15 Bionic chip, Pro camera system, Super Retina XDR display.",
     "price": 999.00,
     "sale_price": null,
-    "image": "https://via.placeholder.com/300",
+    "image": "https://s13emagst.akamaized.net/products/40685/40684395/images/res_93f1fdc590d6fab839efda00a45476b0.jpg?width=720&height=720&hash=8F15C8CEB6757C5AFC57B19AA4B01CF3",
     "rating": 4.9,
     "category": "Smartphones"
   },
@@ -14,8 +14,8 @@
     "name": "Samsung Galaxy S21 Ultra",
     "description": "120Hz Dynamic AMOLED display, Exynos 2100 chipset, 108MP camera.",
     "price": 1199.00,
-    "sale_price": null,
-    "image": "https://via.placeholder.com/300",
+    "sale_price": 1099.00,
+    "image": "https://s13emagst.akamaized.net/products/34408/34407359/images/res_3df3d94cf9f07117708b0b885ea9123e.jpg?width=720&height=720&hash=9CC6920B4A334A0F49E4DEABB9E6EB9B",
     "rating": 4.8,
     "category": "Smartphones"
   },
@@ -25,7 +25,7 @@
     "description": "Google Tensor chip, 120Hz LTPO OLED display, Dual rear cameras.",
     "price": 899.00,
     "sale_price": null,
-    "image": "https://via.placeholder.com/300",
+    "image": "https://s13emagst.akamaized.net/products/48040/48039645/images/res_0774908641658de2723c96e6018e2260.jpg?width=720&height=720&hash=10416CA11A4B1C548E832DBE2AE091ED",
     "rating": 4.7,
     "category": "Smartphones"
   },
@@ -35,7 +35,7 @@
     "description": "120Hz Fluid AMOLED display, Snapdragon 888 chipset, Hasselblad camera.",
     "price": 1069.00,
     "sale_price": null,
-    "image": "https://via.placeholder.com/300",
+    "image": "https://s13emagst.akamaized.net/products/46694/46693620/images/res_6c64959bdc133d1438edab6002fef86f.jpg?width=720&height=720&hash=80651A270919C447E2291D4A45426171",
     "rating": 4.6,
     "category": "Smartphones"
   },
@@ -45,7 +45,7 @@
     "description": "Apple M1 chip, Retina display, Magic Keyboard.",
     "price": 1299.00,
     "sale_price": null,
-    "image": "https://via.placeholder.com/300",
+    "image": "https://s13emagst.akamaized.net/products/46530/46529803/images/res_e54a0dc87466cd005ca4955b8ebcd839.jpg?width=720&height=720&hash=610AF8FBCCA17A335F6CB6C3FED9BB82",
     "rating": 4.9,
     "category": "Laptops"
   },
@@ -55,7 +55,7 @@
     "description": "11th Gen Intel Core processor, InfinityEdge display, Dell Cinema.",
     "price": 999.99,
     "sale_price": null,
-    "image": "https://via.placeholder.com/300",
+    "image": "https://s13emagst.akamaized.net/products/69264/69263883/images/res_448c6253b6c5e2dc1f696a4b444dfca9.png?width=720&height=720&hash=493587EBD7447E0BEF93AD5576EF5098",
     "rating": 4.8,
     "category": "Laptops"
   },
@@ -65,7 +65,7 @@
     "description": "11th Gen Intel Core processor, OLED display, Convertible design.",
     "price": 1399.99,
     "sale_price": null,
-    "image": "https://via.placeholder.com/300",
+    "image": "https://s13emagst.akamaized.net/products/67632/67631762/images/res_cbc8f444736b340a271a7c0639972835.jpg?width=720&height=720&hash=0C46449264F1D58BAC2CDC503B4D2D10",
     "rating": 4.7,
     "category": "Laptops"
   },
@@ -75,7 +75,7 @@
     "description": "11th Gen Intel Core processor, 4K Dolby Vision display, Business-ready.",
     "price": 1499.99,
     "sale_price": null,
-    "image": "https://via.placeholder.com/300",
+    "image": "https://s13emagst.akamaized.net/products/64312/64311524/images/res_54dc67781d4155b72621b5e8715b0210.jpg?width=720&height=720&hash=55E436568AC3B58FF3EF8B48CDD68FEB",
     "rating": 4.6,
     "category": "Laptops"
   },
@@ -85,7 +85,7 @@
     "description": "Industry-leading noise cancellation, Dual noise sensor technology.",
     "price": 349.99,
     "sale_price": null,
-    "image": "https://via.placeholder.com/300",
+    "image": "https://s13emagst.akamaized.net/products/31855/31854169/images/res_14c0fdbd6281c1c74aa4ed5d9e2968a8.jpg?width=720&height=720&hash=64A53E5F7838B2AD35F5C6B82783C1C5",
     "rating": 4.9,
     "category": "Headphones"
   },
@@ -95,7 +95,7 @@
     "description": "Acclaimed noise cancelling, Bluetooth wireless technology, Comfortable design.",
     "price": 329.00,
     "sale_price": null,
-    "image": "https://via.placeholder.com/300",
+    "image": "https://s13emagst.akamaized.net/products/31855/31854169/images/res_14c0fdbd6281c1c74aa4ed5d9e2968a8.jpg?width=720&height=720&hash=64A53E5F7838B2AD35F5C6B82783C1C5",
     "rating": 4.8,
     "category": "Headphones"
   },
@@ -104,8 +104,8 @@
     "name": "Apple AirPods Pro",
     "description": "Active noise cancellation, Transparency mode, Customizable fit.",
     "price": 249.00,
-    "sale_price": null,
-    "image": "https://via.placeholder.com/300",
+    "sale_price": 224.99,
+    "image": "https://s13emagst.akamaized.net/products/60453/60452176/images/res_391df89bcb38fcb051a48ba6877d78dc.jpg?width=720&height=720&hash=D961A1AD22B0969EFE0A134B8AE3185B",
     "rating": 4.7,
     "category": "Headphones"
   },
@@ -115,7 +115,7 @@
     "description": "Auto on/off and Smart Pause, Active noise cancellation, Built-in Tile tracker.",
     "price": 399.95,
     "sale_price": null,
-    "image": "https://via.placeholder.com/300",
+    "image": "https://s13emagst.akamaized.net/products/46166/46165969/images/res_1941d50dbd7fa608b74a3faef266a8df.jpg?width=720&height=720&hash=879E16078559C4C128F321279FE414AB",
     "rating": 4.6,
     "category": "Headphones"
   },
@@ -125,7 +125,7 @@
     "description": "Always-on Retina display, Blood oxygen sensor, ECG app.",
     "price": 399.00,
     "sale_price": null,
-    "image": "https://via.placeholder.com/300",
+    "image": "https://s13emagst.akamaized.net/products/60442/60441062/images/res_f1a8823683a095b6c4b65a43564b2772.jpg?width=720&height=720&hash=B95160C38481191F75061F65B0382D6C",
     "rating": 4.9,
     "category": "Smartwatches"
   },
@@ -135,7 +135,7 @@
     "description": "Advanced health monitoring, Built-in GPS, Military-grade durability.",
     "price": 249.99,
     "sale_price": null,
-    "image": "https://via.placeholder.com/300",
+    "image": "https://s13emagst.akamaized.net/products/39335/39334348/images/res_1448db21078edabda99121265e34d1f5.jpg?width=720&height=720&hash=67C9EAC9D4B07A73C221CEB121407148",
     "rating": 4.8,
     "category": "Smartwatches"
   },
@@ -145,7 +145,7 @@
     "description": "Built-in GPS, Active Zone Minutes, 24/7 heart rate tracking.",
     "price": 229.95,
     "sale_price": null,
-    "image": "https://via.placeholder.com/300",
+    "image": "https://s13emagst.akamaized.net/products/32320/32319920/images/res_2731f22bcfdfa957e9de52feb3d6d9c9.jpg?width=720&height=720&hash=712AB5A60B6C307D814B116456EB8CAA",
     "rating": 4.7,
     "category": "Smartwatches"
   },
@@ -154,8 +154,8 @@
     "name": "Garmin Fenix 6 Pro",
     "description": "Built-in navigation sensors, Heart rate monitoring, Multi-GNSS support.",
     "price": 699.99,
-    "sale_price": null,
-    "image": "https://via.placeholder.com/300",
+    "sale_price": 669.99,
+    "image": "https://s13emagst.akamaized.net/products/31883/31882381/images/res_720f8d443ac72632d87334c1f7cc26bc.jpg?width=720&height=720&hash=834AD5A8A4F85E3AC4B0C68022AC518A",
     "rating": 4.6,
     "category": "Smartwatches"
   }

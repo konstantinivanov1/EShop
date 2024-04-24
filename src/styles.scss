@@ -23,4 +23,20 @@ body{
         width: auto;
         max-width: 100%;
     }
+
+    app-product-card{
+        cursor: pointer;
+    }
+
+    .relative{
+        position: relative;
+    }
+
+    .absolute{
+        position: absolute;
+    }
+
+    a{
+        color: #ff7846;
+    }
 }

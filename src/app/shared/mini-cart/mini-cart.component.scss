@@ -1,7 +1,8 @@
-.cart-component-holder{
+.mini-cart-holder{
 
     .cart-icon-holder{
         position: relative;
+        cursor: pointer;
 
         .cart-icon{
             height: 40px;
@@ -20,6 +21,83 @@
             display: flex;
             align-items: center;
             justify-content: center;
+        }
+    }
+    
+    .cart-dropdown-holder{
+        background-color: #ffffff;
+        border: 1px solid #ff7846;
+        top: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 500px;
+        min-height: 100px;
+
+        &::before{
+            content: "";
+            position: absolute;
+            top: -18px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-bottom: 17px solid transparent;
+            border-left: 7px solid #ff7846;
+            border-right: 7px solid #ff7846;
+        }
+
+        &.empty{
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+         
+            .empty-message{
+                text-align: center;
+                font-size: 22px;
+                font-style: oblique
+            }
+        }
+
+        ::ng-deep{
+
+            app-product-card{
+                display: block;
+                border-top: 1px solid #cccccc;
+
+                &:first-child{
+                    border-top: 0;
+                }
+            }
+            
+            .product-card{
+                border: 0;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                border-radius: 0;
+
+                img{
+                    height: 100px;
+                }
+
+                .price-info{
+                    width: unset;
+                }
+
+                .desc,
+                .price-info .add-to-cart{
+                    display: none;
+                }
+            }
+
+        }
+
+        .go-to-cart{
+            text-align: center;
+            width: 100%;
+            display: block;
+            margin: 12px 0;
+            font-size: 16px;
         }
     }
 }

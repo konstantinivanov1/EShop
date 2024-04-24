@@ -37,9 +37,9 @@ export class ProductListComponent {
   }
 
   setCategory(category: string) {
+    event?.stopPropagation();
     this.currentCategory = category;
     this.filteredProducts = this.products.filter(product => product.category === this.currentCategory);
     console.log(this.currentCategory);
-    
   } 
 }
