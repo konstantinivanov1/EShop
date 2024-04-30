@@ -1,4 +1,4 @@
-<div class="product-card" (click)="setCurrentProduct()" [class.sale]="product.sale_price">
+<a class="product-card" (click)="setCurrentProduct()" [class.sale]="product.sale_price" [href]="'/product/' + product.id">
     <img [src]="product.image" alt="Product Image">
     <h3>{{product.name}}</h3>
     <p class="desc">{{product.description}}</p>
@@ -6,4 +6,4 @@
         <p class="price">${{product.price.toFixed(2)}}</p>
         <div (click)="addToCard(product)" class="add-to-cart">Add to cart</div>
     </div>
-</div>
+</a>

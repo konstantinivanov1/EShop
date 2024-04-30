@@ -16,7 +16,7 @@ export const loadProductsFail = createAction(
     props<{error: string}>()
 );
 
-export const getProductById = createAction(
+export const setSelectedProduct = createAction(
     '[Product] Get Product By Id',
     props<{productId: number | null}>()
 )

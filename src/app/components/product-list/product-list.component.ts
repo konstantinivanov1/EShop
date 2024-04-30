@@ -23,10 +23,6 @@ export class ProductListComponent {
   ngOnInit(): void {
     this.products$ = this.store.pipe(select(selectProducts));
 
-    this.productService.getProducts().subscribe(products => {
-      this.store.dispatch(loadProducts({ products }));
-    });
-
     this.products$.subscribe(products => {
       this.products = products;
       this.categories.clear();

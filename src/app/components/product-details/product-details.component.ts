@@ -1,12 +1,12 @@
-import { Component } from '@angular/core';
+import { ChangeDetectorRef, Component } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { AppState } from '../../app.module';
 import { Product } from '../../reducers/products.reducer';
-import { selectCurrentProduct, selectRelatedProducts } from '../../selectors/products.selectors';
+import { selectCurrentProduct, selectProducts, selectRelatedProducts } from '../../selectors/products.selectors';
 import { ActivatedRoute } from '@angular/router';
-import { getProductByCategory, getProductById } from '../../actions/products.actions';
-import { Observable } from 'rxjs';
+import { getProductByCategory, setSelectedProduct } from '../../actions/products.actions';
 import { addToCard } from '../../actions/cart.actions';
+import { map } from 'rxjs';
 
 @Component({
   selector: 'app-product-details',
@@ -20,21 +20,24 @@ export class ProductDetailsComponent {
   category: string | undefined = '';
   relatedProducts$: any;
   relatedProducts: any;
+  allProducts: any;
 
   constructor(
     private store: Store<AppState>,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private cdr: ChangeDetectorRef
   ){}
 
   ngOnInit() {
     const id = this.route.snapshot.paramMap.get('id');
     this.productId = Number(id);
     
-    this.store.dispatch(getProductById({productId: this.productId}))
+    this.store.dispatch(setSelectedProduct({productId: this.productId}));
 
     this.product$ = this.store.select(selectCurrentProduct);
     this.product$.subscribe((product: Product) => {
       this.product = product;
+      console.log(this.productId);
     })
     
     this.category = this.product?.category;
@@ -43,11 +46,11 @@ export class ProductDetailsComponent {
 
     this.relatedProducts$ = this.store.select(selectRelatedProducts);
     this.relatedProducts$.subscribe((product: Product) => {
-      this.relatedProducts = product;
-      console.log(this.relatedProducts);
-      
+      this.relatedProducts = product;      
     })
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 0);
+
+    this.cdr.detectChanges();
   }
 
   refresh() {

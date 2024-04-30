@@ -1,5 +1,5 @@
 import { createReducer, on } from "@ngrx/store"
-import { getProductByCategory, getProductById, loadProducts, loadProductsFail, loadProductsSuccess } from "../actions/products.actions"
+import { getProductByCategory, setSelectedProduct, loadProducts, loadProductsFail, loadProductsSuccess } from "../actions/products.actions"
 import { findIndex } from "rxjs"
 
 export interface Product{
@@ -39,7 +39,7 @@ export const productsReducer = createReducer(
             products
         }
     }),
-    on(getProductById, (state, {productId}) => {
+    on(setSelectedProduct, (state, {productId}) => {
         const productIndex = state.products.findIndex(product => product.id === productId);
         if(productIndex === -1){
             return{
